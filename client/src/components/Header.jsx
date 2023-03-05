@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <div>
+    <div id="header">
       <p>Dogs breed</p>
       <ul>
         <li>Home</li>
