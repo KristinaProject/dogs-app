@@ -1,4 +1,11 @@
+@use "./variables" as v;
+
 #header {
   background-color: brown;
   width: 100%;
+  color: v.$text-color;
+
+  p {
+    margin: 0;
+  }
 }

@@ -1,6 +1,10 @@
 #header {
   background-color: brown;
   width: 100%;
+  color: white;
+}
+#header p {
+  margin: 0;
 }
 
 html,
