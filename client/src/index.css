@@ -1,10 +1,39 @@
 #header {
-  background-color: brown;
+  background-color: #373829;
   width: 100%;
   color: white;
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+  justify-content: space-between;
 }
 #header p {
   margin: 0;
+}
+#header button {
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4d6e0;
+  color: #373829;
+}
+#header #list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#header #list li a {
+  text-decoration: none;
+  color: white;
+}
+#header .flexRow {
+  flex-direction: row;
+}
+#header .flexRow li {
+  margin-left: 20px;
 }
 
 html,

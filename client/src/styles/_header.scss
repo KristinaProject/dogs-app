@@ -1,11 +1,43 @@
 @use "./variables" as v;
+@use "./mixins" as m;
 
 #header {
-  background-color: brown;
+  background-color: #373829;
   width: 100%;
   color: v.$text-color;
+  @include m.flex;
+  padding: 1.5em;
+  justify-content: space-between;
 
   p {
     margin: 0;
+  }
+
+  button {
+    border: none;
+    @include m.flex;
+    padding: 10px;
+    background-color: #f4d6e0;
+    color: #373829;
+  }
+
+  #list {
+    @include m.flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      text-decoration: none;
+      color: v.$text-color;
+    }
+  }
+
+  .flexRow {
+    flex-direction: row;
+
+    li {
+      margin-left: 20px;
+    }
   }
 }
