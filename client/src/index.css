@@ -6,6 +6,7 @@
   align-items: center;
   padding: 1.5em;
   justify-content: space-between;
+  position: relative;
 }
 #header p {
   margin: 0;
@@ -34,6 +35,15 @@
 }
 #header .flexRow li {
   margin-left: 20px;
+}
+
+.onTop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
 }
 
 html,

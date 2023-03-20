@@ -20,8 +20,10 @@ function List({ flow }) {
 
 export function Header() {
   const [width, setWidth] = useState(0);
+  const [open, setOpen] = useState(true);
 
   const flexRow = "flexRow";
+  const onTop = "onTop";
 
   useEffect(() => {
     function updateDimension() {
@@ -37,16 +39,24 @@ export function Header() {
     };
   }, []);
 
+  function handleMenu() {
+    console.log("click");
+    setOpen(true);
+  }
+
   return (
-    <div id="header">
-      <p>Dogs breed</p>
-      {width < 700 ? (
-        <button>
-          <GiHamburgerMenu />
-        </button>
-      ) : (
-        <List flow={flexRow} />
-      )}
-    </div>
+    <>
+      <div id="header">
+        <p>Dogs breed</p>
+        {width < 700 ? (
+          <button onClick={handleMenu}>
+            <GiHamburgerMenu />
+          </button>
+        ) : (
+          <List flow={flexRow} />
+        )}
+      </div>
+      {open ? <List flow={onTop} /> : <></>}
+    </>
   );
 }
