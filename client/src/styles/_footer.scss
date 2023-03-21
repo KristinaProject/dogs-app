@@ -1,0 +1,9 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+footer {
+  background-color: v.$header-bg;
+  color: v.$text-color;
+  @include m.flex;
+  justify-content: center;
+}

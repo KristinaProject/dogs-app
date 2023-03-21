@@ -1,3 +1,7 @@
 export function Footer() {
-  return <p>footer</p>;
+  return (
+    <footer>
+      <p>&copy; copyright by me</p>
+    </footer>
+  );
 }

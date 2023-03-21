@@ -90,6 +90,14 @@ header .flexRow li {
     font-size: 1.2rem;
   }
 }
+footer {
+  background-color: #373829;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 html,
 body {
   width: 100%;
