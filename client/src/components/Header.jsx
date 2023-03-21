@@ -14,6 +14,8 @@ function List({ flow }) {
       <li>
         <Link> Contact</Link>
       </li>
+
+      {flow === "onTop" ? <button>Back</button> : <></>}
     </ul>
   );
 }

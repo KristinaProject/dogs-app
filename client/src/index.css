@@ -26,9 +26,14 @@
   margin: 0;
   padding: 0;
 }
-#header #list li a {
+#header #list li a,
+#header #list button {
   text-decoration: none;
   color: white;
+}
+#header #list button {
+  background-color: #373829;
+  border: none;
 }
 #header .flexRow {
   flex-direction: row;
@@ -38,12 +43,40 @@
 }
 
 .onTop {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: red;
+  background-color: #373829;
+  padding-top: 30px;
+  opacity: 0.9;
+}
+.onTop li a,
+.onTop button {
+  text-decoration: none;
+  color: white;
+}
+.onTop button {
+  background-color: #373829;
+  border: none;
+}
+.onTop li,
+.onTop button {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 2px;
+}
+.onTop li:active,
+.onTop button:active {
+  background-color: #9cb2a5;
 }
 
 html,

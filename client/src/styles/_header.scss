@@ -2,7 +2,7 @@
 @use "./mixins" as m;
 
 #header {
-  background-color: #373829;
+  background-color: v.$header-bg;
   width: 100%;
   color: v.$text-color;
   @include m.flex;
@@ -23,15 +23,7 @@
   }
 
   #list {
-    @include m.flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li a {
-      text-decoration: none;
-      color: v.$text-color;
-    }
+    @include m.listmix;
   }
 
   .flexRow {
@@ -42,11 +34,29 @@
     }
   }
 }
+
 .onTop {
+  @include m.listmix;
+  flex-direction: column;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: red;
+  background-color: v.$header-bg;
+  padding-top: 30px;
+  opacity: 0.9;
+
+  li,
+  button {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 2px;
+  }
+
+  li:active,
+  button:active {
+    background-color: #9cb2a5;
+  }
 }
