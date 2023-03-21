@@ -1,7 +1,7 @@
 @use "./variables" as v;
 @use "./mixins" as m;
 
-#header {
+header {
   background-color: v.$header-bg;
   width: 100%;
   color: v.$text-color;
@@ -58,5 +58,19 @@
   li:active,
   button:active {
     background-color: #9cb2a5;
+  }
+}
+
+@media (min-width: 700px) {
+  header {
+    padding: 1.5em 2.5em;
+
+    p {
+      font-size: v.$main-bigger;
+    }
+
+    a {
+      font-size: v.$main-font;
+    }
   }
 }

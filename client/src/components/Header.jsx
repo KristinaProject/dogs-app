@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useEffect, useState } from "react";
 
-function List({ flow }) {
+function List({ flow, setOpen }) {
   return (
     <ul className={flow} id="list">
       <li>
@@ -15,7 +15,11 @@ function List({ flow }) {
         <Link> Contact</Link>
       </li>
 
-      {flow === "onTop" ? <button>Back</button> : <></>}
+      {flow === "onTop" ? (
+        <button onClick={() => setOpen(false)}>Back</button>
+      ) : (
+        <></>
+      )}
     </ul>
   );
 }
@@ -42,13 +46,12 @@ export function Header() {
   }, []);
 
   function handleMenu() {
-    console.log("click");
     setOpen(true);
   }
 
   return (
     <>
-      <div id="header">
+      <header>
         <p>Dogs breed</p>
         {width < 700 ? (
           <button onClick={handleMenu}>
@@ -57,8 +60,8 @@ export function Header() {
         ) : (
           <List flow={flexRow} />
         )}
-      </div>
-      {open ? <List flow={onTop} /> : <></>}
+      </header>
+      {open ? <List flow={onTop} setOpen={setOpen} /> : <></>}
     </>
   );
 }
