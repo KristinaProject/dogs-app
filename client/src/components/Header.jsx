@@ -26,7 +26,7 @@ function List({ flow, setOpen }) {
 
 export function Header() {
   const [width, setWidth] = useState(0);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const flexRow = "flexRow";
   const onTop = "onTop";

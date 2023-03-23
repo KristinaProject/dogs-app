@@ -98,6 +98,36 @@ footer {
   justify-content: center;
 }
 
+#landing {
+  position: relative;
+  height: 300px;
+}
+#landing .text-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  color: white;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+}
+#landing .text-wrapper h1 {
+  margin: 0;
+}
+#landing .image-wrapper {
+  background-image: url("~images/dog.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 100%;
+  height: inherit;
+}
+
 html,
 body {
   width: 100%;
