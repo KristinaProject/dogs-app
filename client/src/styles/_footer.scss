@@ -6,4 +6,5 @@ footer {
   color: v.$text-color;
   @include m.flex;
   justify-content: center;
+  font-size: v.$main-font;
 }

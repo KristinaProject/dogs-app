@@ -12,6 +12,7 @@ header {
 
   p {
     margin: 0;
+    font-size: v.$main-bigger;
   }
 
   button {
@@ -46,12 +47,14 @@ header {
   background-color: v.$header-bg;
   padding-top: 30px;
   opacity: 0.9;
+  z-index: 1000;
 
   li,
   button {
     text-align: center;
     width: 100%;
     padding: 20px;
+    font-size: v.$main-font;
     margin-bottom: 2px;
   }
 

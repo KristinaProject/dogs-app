@@ -1,5 +1,3 @@
-import dog from "../images/dog.jpg";
-
 export function Home() {
   return (
     <div id="landing">
