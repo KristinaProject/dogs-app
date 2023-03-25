@@ -6,7 +6,7 @@ header {
   width: 100%;
   color: v.$text-color;
   @include m.flex;
-  padding: 1.5em;
+  padding: 1.5em 2.5em;
   justify-content: space-between;
   position: relative;
 
@@ -31,7 +31,7 @@ header {
     flex-direction: row;
 
     li {
-      margin-left: 20px;
+      margin-left: 5em;
     }
   }
 }
@@ -74,6 +74,20 @@ header {
 
     a {
       font-size: v.$main-font;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    padding: 2em 5em;
+
+    p {
+      font-size: v.$main-rs-bigger;
+    }
+
+    a {
+      font-size: v.$main-rs-font;
     }
   }
 }
