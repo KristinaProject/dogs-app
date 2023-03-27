@@ -167,6 +167,14 @@ footer {
     backdrop-filter: blur(15px) !important;
   }
 }
+#cardlist {
+  padding: 20px;
+  margin: 0;
+}
+#cardlist li {
+  list-style: none;
+}
+
 html,
 body {
   width: 100%;

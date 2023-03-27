@@ -1,4 +1,6 @@
-export function Home() {
+import { CardList } from "./CardList";
+
+function Landing() {
   return (
     <div id="landing">
       <div className="text-wrapper">
@@ -6,5 +8,14 @@ export function Home() {
       </div>
       <div className="image-wrapper"></div>
     </div>
+  );
+}
+
+export function Home() {
+  return (
+    <>
+      <Landing />
+      <CardList class={"find-home"} />
+    </>
   );
 }
