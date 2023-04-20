@@ -13,7 +13,7 @@ function Card({ name }) {
     fetchingData();
   }, []);
   return (
-    <div>
+    <div className="card">
       <div className="dog-image">
         <img src={info} alt={info} />
       </div>
@@ -25,12 +25,12 @@ function Card({ name }) {
 export function CardList(props) {
   return (
     <ul className={props.class} id="cardlist">
-      <li className="card">
+      <li>
         <Link>
           <Card name="Random breeds" />
         </Link>
       </li>
-      <li className="card">
+      <li>
         <Link>
           <Card name="Breeds by category" />
         </Link>

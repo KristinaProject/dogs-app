@@ -1,8 +1,36 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
 #cardlist {
-  padding: 20px;
-  margin: 0;
+  @include m.listmix;
 
   li {
     list-style: none;
+
+    .card {
+      background-color: v.$text-color;
+      padding: 10px;
+
+      .dog-image {
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      span {
+        color: v.$header-bg;
+        font-family: v.$main-font;
+      }
+    }
   }
+}
+
+.find-home {
+  padding: 40px !important;
+  flex-direction: column;
+  gap: 10px;
 }
